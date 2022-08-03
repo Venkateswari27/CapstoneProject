@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\wwwroot",
-    "\\wwwroot\\css"
+    "\\wwwroot\\css",
+    "\\wwwroot\\lib",
+    "\\wwwroot\\lib\\bootstrap",
+    "\\wwwroot\\lib\\bootstrap\\dist",
+    "\\wwwroot\\lib\\bootstrap\\dist\\js"
   ],
-  "SelectedNode": "\\wwwroot\\css\\site.css",
+  "SelectedNode": "\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
   "PreviewInSolutionExplorer": false
 }
