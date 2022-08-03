@@ -1,7 +1,7 @@
-using malshetwi_CapstoneProject_SDA.LMS.Data;
-using malshetwi_CapstoneProject_SDA.LMS.Data.Cart;
-using malshetwi_CapstoneProject_SDA.LMS.Data.Services;
-using malshetwi_CapstoneProject_SDA.LMS.Models;
+using CapstoneProject_.NETFSD.Data;
+using CapstoneProject_.NETFSD.Data.Cart;
+using CapstoneProject_.NETFSD.Data.Services;
+using CapstoneProject_.NETFSD.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,7 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS
+namespace CapstoneProject_.NETFSD
 {
     public class Startup
     {

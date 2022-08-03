@@ -1,5 +1,5 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Data.Static;
-using malshetwi_CapstoneProject_SDA.LMS.Models;
+﻿using CapstoneProject_.NETFSD.Data.Static;
+using CapstoneProject_.NETFSD.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data
+namespace CapstoneProject_.NETFSD.Data
 {
     public class AppDbInitializer
     {
@@ -54,7 +54,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data
                         ImageCode = 4,
                         Name = "Panadol Blue",
                         Description="Brand: Panadol, Panadol Blue Paracetamol 500 Mg - 24 Tabs",
-                        Price=5.00,
+                        Price=6.00,
                         MedicineCategory=MedicineCategory.MedicineAndTreatment},
 
                     new Medicine()
@@ -70,7 +70,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data
                         ImageCode = 6,
                         Name = "Nivea After Shave Balm Replenishing",
                         Description="Deeply moisturizer Lotion helps prevent dry and tight skin delivers a long-lasting",
-                        Price=31.76,
+                        Price=376,
                         MedicineCategory=MedicineCategory.PersonalCare},
 
                     new Medicine()

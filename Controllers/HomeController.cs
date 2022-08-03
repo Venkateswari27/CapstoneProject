@@ -1,4 +1,4 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Models;
+﻿using CapstoneProject_.NETFSD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
+namespace CapstoneProject_.NETFSD.Controllers
 {
     public class HomeController : Controller
     {

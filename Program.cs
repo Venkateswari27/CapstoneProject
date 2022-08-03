@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS
+namespace CapstoneProject_.NETFSD
 {
     public class Program
     {

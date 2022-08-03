@@ -1,11 +1,11 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Data;
+﻿using CapstoneProject_.NETFSD.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Models
+namespace CapstoneProject_.NETFSD.Models
 {
     public class Medicine
     {

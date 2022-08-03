@@ -1,6 +1,6 @@
 using System;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Models
+namespace CapstoneProject_.NETFSD.Models
 {
     public class ErrorViewModel
     {

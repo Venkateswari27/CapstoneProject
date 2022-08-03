@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.Static
+namespace CapstoneProject_.NETFSD.Data.Static
 {
     public static class UserRoles
     {

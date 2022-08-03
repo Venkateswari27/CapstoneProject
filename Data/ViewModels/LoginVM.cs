@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels
+namespace CapstoneProject_.NETFSD.ViewModels
 {
     public class LoginVM
     {
@@ -15,5 +15,5 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-    }// V.86
+    }
 }

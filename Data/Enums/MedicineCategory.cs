@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data
+namespace CapstoneProject_.NETFSD.Data
 {
     public enum MedicineCategory
     {

@@ -1,6 +1,6 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Data.Cart;
-using malshetwi_CapstoneProject_SDA.LMS.Data.Services;
-using malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels;
+﻿using CapstoneProject_.NETFSD.Data.Cart;
+using CapstoneProject_.NETFSD.Data.Services;
+using CapstoneProject_.NETFSD.Data.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,9 +9,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
+namespace CapstoneProject_.NETFSD.Controllers
 {
-    [Authorize]                                           // Vid.96
+    [Authorize]                                          
     public class OrdersController : Controller
     { 
         private readonly IMedicinesService _medicinesService;
@@ -33,10 +33,10 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             string userRole = User.FindFirstValue(ClaimTypes.Role);
             var Orders = await _ordersService.GetOrdersByUserIdAndRole(userId, userRole);
             return View(Orders);
-        }                                                    // Vid. 75, 94 Implement Identity
+        }                                                   
 
-        [AllowAnonymous]                                    // Vid.96
-        public IActionResult ShoppingCart() // < as index of shoppingCart
+        [AllowAnonymous]                                   
+        public IActionResult ShoppingCart()
         {
             var Items = _ShoppingCart.GetShoppingCartItems();
             _ShoppingCart.ShoppingCartItems = Items;
@@ -46,7 +46,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
                 ShoppingCart = _ShoppingCart,
                 ShoppingCartTotal = _ShoppingCart.GetShoppingCartTotal()
             };
-            return View(response); // Vid 67
+            return View(response);
         }
         
         public async Task<IActionResult> AddItemToShoppingCart(int id)
@@ -56,7 +56,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             {
                 _ShoppingCart.AddItemToCart(item);
             }
-            return RedirectToAction(nameof(ShoppingCart)); // Vid 70
+            return RedirectToAction(nameof(ShoppingCart)); 
         }
 
         public async Task<IActionResult> RemoveItemFromShoppingCart(int id)
@@ -66,7 +66,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             {
                 _ShoppingCart.DeleteItemFromCart(item);
             }
-            return RedirectToAction(nameof(ShoppingCart)); // Vid 71
+            return RedirectToAction(nameof(ShoppingCart)); 
         }
         public async Task<IActionResult> CompleteOrder()
         {
@@ -82,9 +82,9 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
 
                 return View();
             }
-            TempData["Error"] = "Trespassing detected, cart must contain item to complete order"; // <QA> code lines for security, +if & error msg MSH <QA/>
+            TempData["Error"] = "Trespassing detected, cart must contain item to complete order";
             return RedirectToAction(nameof(ShoppingCart));
 
-        }                                               // Vid 74, 94 Implement Identity
+        }                                               
     }
 }

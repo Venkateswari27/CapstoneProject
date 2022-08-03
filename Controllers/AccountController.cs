@@ -1,7 +1,8 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Data;
-using malshetwi_CapstoneProject_SDA.LMS.Data.Static;
-using malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels;
-using malshetwi_CapstoneProject_SDA.LMS.Models;
+﻿using CapstoneProject_.NETFSD.Data;
+using CapstoneProject_.NETFSD.Data.Static;
+using CapstoneProject_.NETFSD.Data.ViewModels;
+using CapstoneProject_.NETFSD.Models;
+using CapstoneProject_.NETFSD.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
+namespace CapstoneProject_.NETFSD.Controllers
 {
     public class AccountController : Controller
     {
@@ -23,9 +24,9 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
             _context = context;
-        }// V.85
+        }
 
-        [Authorize(Roles = UserRoles.Admin)] // V.97
+        [Authorize(Roles = UserRoles.Admin)] 
         public async Task<IActionResult> Users()
         {
             var users = await _context.Users.ToListAsync();
@@ -35,7 +36,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
         public IActionResult Login()
         {
             return View(new LoginVM());
-        }// V.86
+        }
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM)
@@ -59,12 +60,12 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             }
             TempData["Error"] = "Wrong credential, please try again!";
             return View(loginVM);
-        }// V.87
+        }
 
         public IActionResult Register()
         {
             return View(new RegisterVM());
-        }// V.88
+        }
 
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM)
@@ -93,7 +94,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             }
             TempData["Error"] = "Password must contain: At least 6 characters, OneUpperCase, OneLowerCase, OneNumber, Symbol as [$#@]"; // [TroubleShooting] when seed pass shoud provide asp.netPass_requiremen [PassValidation] MSH
             return View(registerVM);
-        }// V.89
+        }
 
         [HttpPost]
         public async Task<IActionResult> Logout()
@@ -101,14 +102,12 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Medicines");
 
-        }// V.90
+        }
 
         public IActionResult AccessDenied(string ReturnUrl)
         {
             return View();
-        } //v.97
-
-        //----MSH-----
+        } 
         public IActionResult DemoCredentials()
         {
             return View();

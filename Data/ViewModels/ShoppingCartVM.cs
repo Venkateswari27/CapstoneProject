@@ -1,10 +1,10 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Data.Cart;
+﻿using CapstoneProject_.NETFSD.Data.Cart;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels
+namespace CapstoneProject_.NETFSD.Data.ViewModels
 {
     public class ShoppingCartVM
     {

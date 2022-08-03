@@ -1,11 +1,11 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Models;
+﻿using CapstoneProject_.NETFSD.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.Services
+namespace CapstoneProject_.NETFSD.Data.Services
 {
     public class MedicinesService : IMedicinesService
     {

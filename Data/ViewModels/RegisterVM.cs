@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels
+namespace CapstoneProject_.NETFSD.Data.ViewModels
 {
     public class RegisterVM
     {
@@ -25,5 +25,5 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewModels
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage ="Passwords don't match")]
         public string ConfirmPassword { get; set; }
-    }// V.88
+    }
 }

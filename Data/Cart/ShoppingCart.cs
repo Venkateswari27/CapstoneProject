@@ -1,4 +1,4 @@
-﻿using malshetwi_CapstoneProject_SDA.LMS.Models;
+﻿using CapstoneProject_.NETFSD.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,23 +7,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.Cart
+namespace CapstoneProject_.NETFSD.Data.Cart
 {
     public class ShoppingCart
     {
         public AppDbContext _context { get; set; }
-        public string ShoppingCartID2 { get; set; } // Local ShoppingCartID
+        public string ShoppingCartID2 { get; set; }
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }
 
        public ShoppingCart(AppDbContext context)
         {
             _context = context;
         }
-        public static ShoppingCart GetShoppingCart(IServiceProvider services) // Initiate of Cart and Session
-        {                                                                     //  ? if not null
+        public static ShoppingCart GetShoppingCart(IServiceProvider services) 
+        {                                                                     
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
             var context = services.GetService<AppDbContext>();
-                                                    //  ?? if null
+                                                   
             string CartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
             session.SetString("CartId", CartId);
 
@@ -46,7 +46,7 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.Cart
             
             else { shoppingCartItem.Amount++; }         
 
-            _context.SaveChanges();                     // Vid 65
+            _context.SaveChanges();                     
         }
 
         public void DeleteItemFromCart(Medicine medicine)
@@ -60,20 +60,20 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.Cart
             
             else { _context.shoppingCartItems.Remove(shoppingCartItem);}
             }
-            _context.SaveChanges();                     // Vid 66
+            _context.SaveChanges();                   
         }
 
         public List<ShoppingCartItem> GetShoppingCartItems()
         {
             return ShoppingCartItems ?? (ShoppingCartItems = _context.shoppingCartItems.Where(n => n.ShoppingCartID == ShoppingCartID2)
-                .Include(n => n.Medicine).ToList());    // Vid 64
+                .Include(n => n.Medicine).ToList());   
         }
 
         public double GetShoppingCartTotal()
         {
             var Total = _context.shoppingCartItems.Where(n => n.ShoppingCartID == ShoppingCartID2)
                 .Select(n => n.Medicine.Price * n.Amount).Sum();
-            return Total;                               // Vid 64
+            return Total;                              
         } 
 
         public async Task ClearShoppingCart()
@@ -81,6 +81,6 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.Cart
             var items = await _context.shoppingCartItems.Where(n => n.ShoppingCartID == ShoppingCartID2).ToListAsync();
             _context.shoppingCartItems.RemoveRange(items);
             await _context.SaveChangesAsync();
-        }                                               // Vid 74
+        }                                               
     }
 }

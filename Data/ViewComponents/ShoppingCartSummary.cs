@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using malshetwi_CapstoneProject_SDA.LMS.Data.Cart;
+using CapstoneProject_.NETFSD.Data.Cart;
 using Microsoft.AspNetCore.Mvc;
 
-namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewComponents
+namespace CapstoneProject_.NETFSD.Data.ViewComponents
 {
     public class ShoppingCartSummary : ViewComponent
     {
@@ -17,8 +17,8 @@ namespace malshetwi_CapstoneProject_SDA.LMS.Data.ViewComponents
         public IViewComponentResult Invoke()
         {
             var items = _shoppingCart.GetShoppingCartItems();
-            return View (items.Count);
+            return View(items.Count);
         }
 
-    }                                                // Vid.72
+    }
 }
