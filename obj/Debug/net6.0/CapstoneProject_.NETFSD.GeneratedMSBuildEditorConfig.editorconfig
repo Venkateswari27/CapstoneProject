@@ -8,93 +8,93 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CapstoneProject_.NETFSD
 build_property.RootNamespace = CapstoneProject_.NETFSD
-build_property.ProjectDir = D:\git\CapstoneProject_.NETFSD\
+build_property.ProjectDir = D:\git\Project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\git\CapstoneProject_.NETFSD
+build_property.MSBuildProjectDirectory = D:\git\Project
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/AccessDenied.cshtml]
+[D:/git/Project/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/DemoCredentials.cshtml]
+[D:/git/Project/Views/Account/DemoCredentials.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZW1vQ3JlZGVudGlhbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/Login.cshtml]
+[D:/git/Project/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/Register.cshtml]
+[D:/git/Project/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/RegisterCompleted.cshtml]
+[D:/git/Project/Views/Account/RegisterCompleted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckNvbXBsZXRlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Account/Users.cshtml]
+[D:/git/Project/Views/Account/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Home/About.cshtml]
+[D:/git/Project/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Medicines/Create.cshtml]
+[D:/git/Project/Views/Medicines/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Medicines/Edit.cshtml]
+[D:/git/Project/Views/Medicines/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Medicines/Index.cshtml]
+[D:/git/Project/Views/Medicines/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Orders/CompleteOrder.cshtml]
+[D:/git/Project/Views/Orders/CompleteOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENvbXBsZXRlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Orders/Index.cshtml]
+[D:/git/Project/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Orders/ShoppingCart.cshtml]
+[D:/git/Project/Views/Orders/ShoppingCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFNob3BwaW5nQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/Components/ShoppingCartSummary/Default.cshtml]
+[D:/git/Project/Views/Shared/Components/ShoppingCartSummary/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2hvcHBpbmdDYXJ0U3VtbWFyeVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/Error.cshtml]
+[D:/git/Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/NotFounded.cshtml]
+[D:/git/Project/Views/Shared/NotFounded.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/_Identity.cshtml]
+[D:/git/Project/Views/Shared/_Identity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JZGVudGl0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/_Layout.cshtml]
+[D:/git/Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/git/Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/_ViewImports.cshtml]
+[D:/git/Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/CapstoneProject_.NETFSD/Views/_ViewStart.cshtml]
+[D:/git/Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

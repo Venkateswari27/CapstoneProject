@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\CapstoneProject_.NETFSD\\CapstoneProject_.NETFSD.csproj": {}
+    "D:\\git\\Project\\CapstoneProject_.NETFSD.csproj": {}
   },
   "projects": {
-    "D:\\git\\CapstoneProject_.NETFSD\\CapstoneProject_.NETFSD.csproj": {
+    "D:\\git\\Project\\CapstoneProject_.NETFSD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\CapstoneProject_.NETFSD\\CapstoneProject_.NETFSD.csproj",
+        "projectUniqueName": "D:\\git\\Project\\CapstoneProject_.NETFSD.csproj",
         "projectName": "CapstoneProject_.NETFSD",
-        "projectPath": "D:\\git\\CapstoneProject_.NETFSD\\CapstoneProject_.NETFSD.csproj",
+        "projectPath": "D:\\git\\Project\\CapstoneProject_.NETFSD.csproj",
         "packagesPath": "C:\\Users\\Hemanth Nandyala\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\CapstoneProject_.NETFSD\\obj\\",
+        "outputPath": "D:\\git\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hemanth Nandyala\\AppData\\Roaming\\NuGet\\NuGet.Config",
